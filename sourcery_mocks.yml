@@ -1,0 +1,10 @@
+sources:
+  - ./UIComponents/
+templates:
+  - Carthage/Checkouts/FataMorgana/Template/Mock.stencil
+output: 
+  ./UIComponents/mocks/generated/
+args:
+  # testableModule: "UIComponents"
+  returnEmptyArray: false
+  returnEmptyDict: false
