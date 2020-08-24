@@ -1,7 +1,0 @@
-sources:
-  - ./UIComponents/
-templates:
-  - AutoHashable.stencil
-output: 
-  ./UIComponents/
-args:

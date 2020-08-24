@@ -1,7 +1,0 @@
-sources:
-  - ./UIComponents/
-templates:
-  - AutoEquatable.stencil
-output: 
-  ./UIComponents/
-args:

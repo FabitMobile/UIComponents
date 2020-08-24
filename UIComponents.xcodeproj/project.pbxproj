@@ -11,7 +11,6 @@
 		0502F3D7E4038085D9F2C852 /* CollectionViewAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1BC2CED18CDB08FDB8EF4D /* CollectionViewAdapterDelegate.swift */; };
 		050CFD746163E4EB71C2ED36 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3F2F1AC3DF14B72F7A743 /* StringExt.swift */; };
 		0944B2B2CEBFB574C221EBC7 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5508A742CBA5B3B1EFF71C0 /* Array+Extensions.swift */; };
-		11880BCE81C698484F7A7263 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE643EA4BC39F3725B7DEB29 /* AutoEquatable.generated.swift */; };
 		11D1AC579674EA378A17A22B /* CollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5E19DB1EB454C8A5D1468 /* CollectionSection.swift */; };
 		12B7570835A0AB17209614BA /* ShadowableElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BEE80F12CD0C978ACF5BD1 /* ShadowableElementView.swift */; };
 		15DB3C782F7E2D14213E2CB7 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1DE0A88B08A09A3768670F /* UITableView.swift */; };
@@ -43,7 +42,6 @@
 		906305E970AF90859883056F /* ChangedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADFB39A475C13E7D65DFDA8 /* ChangedData.swift */; };
 		927155DB7F4DC887941E315D /* VerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0691FF1C50311B64C78E5 /* VerticalFlowLayout.swift */; };
 		928AB6F2DC05B2CBCB4F1069 /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D30B7EBBC8476D739E9155F /* UITableViewExt.swift */; };
-		93DB0C4F8E1B12612341040F /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607BA7E1D49B2FF7FEFF30EB /* AutoHashable.generated.swift */; };
 		9A4FA28A6A95D667C6431884 /* ItemConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0007A2668F69A0849BC859 /* ItemConfigurable.swift */; };
 		9D55D638DCABC6E7579EED0D /* UINavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A536CE89B703DE439540934 /* UINavigationControllerExt.swift */; };
 		A0B76588AA55C2765B7F7234 /* CollectionItemConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18CD0C445DB4D5AE58FE6F /* CollectionItemConfigurable.swift */; };
@@ -75,7 +73,6 @@
 		E9D4AAACF9DB1109698C6208 /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645EBC91211BD3BEF5CEEE9 /* BaseCollectionCell.swift */; };
 		EEB39FD24F8F16F0A6794692 /* UICollectionView+BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1BAE324C67C9EA28A6A24 /* UICollectionView+BatchUpdater.swift */; };
 		FB8B5D4271AE8741F308414E /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4EE79FD19786CD74851314 /* UIViewControllerExt.swift */; };
-		FFE8BF8CB0F095659CC3685E /* Mirage2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD49C1980A42635502C5C084 /* Mirage2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,8 +101,7 @@
 		5198A4F4A10264CB5356ED05 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		5323DB0E7C1433FBE6C74B20 /* CellCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCalculator.swift; sourceTree = "<group>"; };
 		5DD3F2F1AC3DF14B72F7A743 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
-		607A252FF6E821BA54433202 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
-		607BA7E1D49B2FF7FEFF30EB /* AutoHashable.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
+		607A252FF6E821BA54433202 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		607C7C4B6385C674A8B43651 /* NSAttributedStringSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringSugar.swift; sourceTree = "<group>"; };
 		65B3784CAD736D4FF250F873 /* TableAdapterCallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAdapterCallbacks.swift; sourceTree = "<group>"; };
 		6B1CE7359FE6D958D8E3103B /* UINavigationBarExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExt.swift; sourceTree = "<group>"; };
@@ -150,7 +146,6 @@
 		FC251006E240498E4BFDC62A /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		FD49C1980A42635502C5C084 /* Mirage2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mirage2.framework; sourceTree = "<group>"; };
 		FE1BC2CED18CDB08FDB8EF4D /* CollectionViewAdapterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapterDelegate.swift; sourceTree = "<group>"; };
-		FE643EA4BC39F3725B7DEB29 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +153,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE8BF8CB0F095659CC3685E /* Mirage2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +183,6 @@
 				8097E48E3CEFD76F1150CA82 /* ListAdapter */,
 				AAD11D78963C67965131FD0C /* ShadowConfigurator */,
 				34578CD506929FB0E4EB35E5 /* UIKitExtensions */,
-				FE643EA4BC39F3725B7DEB29 /* AutoEquatable.generated.swift */,
-				607BA7E1D49B2FF7FEFF30EB /* AutoHashable.generated.swift */,
 				DD842186BC1234A08C0A5E18 /* Info.plist */,
 			);
 			path = UIComponents;
@@ -539,9 +531,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 220B71F7BED498385A3617E0 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
-				76AE8EBA24EECB45584F5FE7 /* Run Script. Generate Equtables */,
-				A2067DC987E74D4BA2C7F13C /* Run Script. Generate Hashable */,
-				7C66C3883A4504A4DA40C683 /* Run Script. Generate Mock */,
 				4390691D843D0B506B7FE9FC /* Sources */,
 				E22395C01C26B8BE7DF6A064 /* Frameworks */,
 			);
@@ -572,6 +561,7 @@
 			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				ru,
 				en,
 			);
 			mainGroup = CB17CC7A66071F8C2CE73EB3;
@@ -583,63 +573,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		76AE8EBA24EECB45584F5FE7 /* Run Script. Generate Equtables */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Equtables";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_auto_equatable.yml\"";
-		};
-		7C66C3883A4504A4DA40C683 /* Run Script. Generate Mock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Mock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_mocks.yml\"";
-		};
-		A2067DC987E74D4BA2C7F13C /* Run Script. Generate Hashable */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script. Generate Hashable";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sourcery --disableCache --config \"${SRCROOT}/sourcery_auto_hashable.yml\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		4390691D843D0B506B7FE9FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -649,8 +582,6 @@
 				447C862BB7167BA7D84940AF /* AdapterScrollViewCallbacks.swift in Sources */,
 				B156F619D749A28C3F66A5C0 /* AdapterSection.swift in Sources */,
 				0944B2B2CEBFB574C221EBC7 /* Array+Extensions.swift in Sources */,
-				11880BCE81C698484F7A7263 /* AutoEquatable.generated.swift in Sources */,
-				93DB0C4F8E1B12612341040F /* AutoHashable.generated.swift in Sources */,
 				E9D4AAACF9DB1109698C6208 /* BaseCollectionCell.swift in Sources */,
 				1974C98CE00EAA1925420C93 /* BatchUpdater.swift in Sources */,
 				AC80F10A999CEBCFAEC092C4 /* Box.swift in Sources */,
