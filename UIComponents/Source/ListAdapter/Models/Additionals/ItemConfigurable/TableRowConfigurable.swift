@@ -1,6 +1,6 @@
 import UIKit
 
-open class TableRowConfigurable: ItemConfigurable, Equatable {
+open class TableRowConfigurable: ItemConfigurable, Equatable, Hashable {
     /// Модель данных ячейки
     open var cellVM: TableCellVM {
         preconditionFailure("This method must be overridden")
@@ -10,5 +10,9 @@ open class TableRowConfigurable: ItemConfigurable, Equatable {
         guard lhs.cellVM.isEqual(rhs.cellVM) else { return false }
 
         return true
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(cellVM)
     }
 }

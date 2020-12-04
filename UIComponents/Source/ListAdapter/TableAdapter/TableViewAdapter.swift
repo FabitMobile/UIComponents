@@ -11,7 +11,7 @@ open class TableViewAdapter {
     // swiftlint:disable:next weak_delegate
     public var delegate: TableViewAdapterDelegate?
 
-    private let batchUpdater = BatchUpdater()
+    private var batchUpdater: BatchUpdater!
 
     // MARK: - Callbacks
 
@@ -33,6 +33,12 @@ open class TableViewAdapter {
         delegate = TableViewAdapterDelegate(holder: self)
         self.tableView.delegate = delegate
         self.tableView.dataSource = delegate
+        
+        if #available(iOS 13.0, *) {
+            self.batchUpdater = BatchUpdaterImpl()
+        } else {
+            self.batchUpdater = LegacyBatchUpdater()
+        }
     }
 
     // MARK: - Private
@@ -70,6 +76,7 @@ open class TableViewAdapter {
             tableView.reloadData()
             tableView.layoutIfNeeded()
             completion(true)
+            
             return
         }
 

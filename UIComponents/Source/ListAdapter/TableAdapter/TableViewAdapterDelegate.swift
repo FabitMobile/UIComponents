@@ -74,7 +74,7 @@ public class TableViewAdapterDelegate: NSObject, UITableViewDelegate, UITableVie
         guard let didSelectRowClosure = holder.callbacks.didSelectRow else { return }
         var newIndexPath: IndexPath?
         for (i, s) in holder.list.sections.enumerated() {
-            for (j, r) in s.rows.enumerated() where r.id == row.id {
+            for (j, r) in s.rows.enumerated() where r.identifier == row.identifier {
                 newIndexPath = IndexPath(row: j, section: i)
                 break
             }

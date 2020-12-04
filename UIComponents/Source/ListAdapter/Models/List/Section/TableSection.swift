@@ -1,6 +1,10 @@
 import UIKit
 
-open class TableSection: AdapterSection<TableRowConfigurable>, EquatableRows {
+open class TableSection: AdapterSection<TableRowConfigurable>,
+                         EquatableRows,
+                         RowHolder,
+                         DeepHashable,
+                         BatchUpdateSection {
     // MARK: Header / Footer
 
     /// Заголовок хедера секции (Внимание! Возможно установить или headerString, или headerView)
@@ -22,7 +26,7 @@ open class TableSection: AdapterSection<TableRowConfigurable>, EquatableRows {
     public var footerView: UIView?
 
     public static func == (lhs: TableSection, rhs: TableSection) -> Bool {
-        guard lhs.id == rhs.id else { return false }
+        guard lhs.identifier == rhs.identifier else { return false }
 
         guard lhs.footerHeight == rhs.footerHeight else { return false }
         guard lhs.footerString == rhs.footerString else { return false }
@@ -45,5 +49,9 @@ open class TableSection: AdapterSection<TableRowConfigurable>, EquatableRows {
         guard rows == rhs.rows else { return false }
 
         return true
+    }
+    
+    func getRows() -> [TableRowConfigurable] {
+        rows
     }
 }

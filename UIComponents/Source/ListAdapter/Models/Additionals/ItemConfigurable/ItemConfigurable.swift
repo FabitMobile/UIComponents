@@ -8,7 +8,7 @@ open class ItemConfigurable: DeepHashable, UniqIdentifier {
     // MARK: Properties
 
     /// Идентификатор строки
-    public internal(set) var id: String = ""
+    public internal(set) var identifier: String = ""
     /// Идентификатор для повторного использования ячейки
     var reuseId: String {
         preconditionFailure("This method must be overridden")
@@ -46,7 +46,7 @@ open class ItemConfigurable: DeepHashable, UniqIdentifier {
     // MARK: DeepHashable
 
     public var deepDiffHash: Int {
-        id.hashValue
+        identifier.hashValue
     }
 
     public func equal(object: Any?) -> Bool {

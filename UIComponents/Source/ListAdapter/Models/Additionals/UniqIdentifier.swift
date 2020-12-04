@@ -2,7 +2,7 @@ import UIKit
 
 /// :nodoc:
 public protocol UniqIdentifier {
-    var id: String { get }
+    var identifier: String { get }
 }
 
 /// :nodoc:

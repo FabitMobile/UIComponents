@@ -18,19 +18,19 @@ open class TableRow<CellType: ConfigurableCell>: TableRowConfigurable {
     public init(viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        id = "\(Date().timeIntervalSince1970)"
+        identifier = "\(Date().timeIntervalSince1970)"
     }
 
     public init(id: Int, viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        self.id = "\(id)"
+        self.identifier = "\(id)"
     }
 
     public init(id: String, viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        self.id = id
+        self.identifier = id
     }
 
     // MARK: - RowConfigurable
@@ -77,7 +77,7 @@ open class TableRow<CellType: ConfigurableCell>: TableRowConfigurable {
     override public func equal(object: Any?) -> Bool {
         guard let object = object as? TableRow<CellType> else { return false }
 
-        guard id == object.id else { return false }
+        guard identifier == object.identifier else { return false }
         guard viewModel == object.viewModel else { return false }
         guard cellVM.isEqual(object.cellVM) else { return false }
         return true

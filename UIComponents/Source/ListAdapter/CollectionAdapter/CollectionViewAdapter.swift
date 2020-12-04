@@ -11,7 +11,7 @@ open class CollectionViewAdapter {
     // swiftlint:disable:next weak_delegate
     private var collectionViewDelegate: CollectionViewAdapterDelegate!
 
-    private let batchUpdater = BatchUpdater()
+    private let batchUpdater = LegacyBatchUpdater()
 
     // MARK: - Callbacks
 

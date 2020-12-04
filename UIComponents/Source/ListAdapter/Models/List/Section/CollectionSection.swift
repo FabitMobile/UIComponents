@@ -1,10 +1,14 @@
 import UIKit
 
-open class CollectionSection: AdapterSection<CollectionItemConfigurable>, EquatableRows {
+open class CollectionSection: AdapterSection<CollectionItemConfigurable>,
+                              EquatableRows,
+                              RowHolder,
+                              DeepHashable,
+                              BatchUpdateSection {
     public var insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 
     public static func == (lhs: CollectionSection, rhs: CollectionSection) -> Bool {
-        guard lhs.id == rhs.id else { return false }
+        guard lhs.identifier == rhs.identifier else { return false }
         guard lhs.insets == rhs.insets else {
             print("overrided equal insets does not equal error")
             return false
@@ -26,5 +30,9 @@ open class CollectionSection: AdapterSection<CollectionItemConfigurable>, Equata
         guard rows == rhs.rows else { return false }
 
         return true
+    }
+    
+    func getRows() -> [CollectionItemConfigurable] {
+        rows
     }
 }

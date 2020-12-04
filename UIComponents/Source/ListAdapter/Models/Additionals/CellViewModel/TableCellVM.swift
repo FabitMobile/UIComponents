@@ -8,7 +8,9 @@ public protocol RowHeightComputable: AnyObject {
 }
 
 open class TableCellVM: SuperCellVM,
-    RowHeightComputable {
+    RowHeightComputable,
+    Hashable {
+    
     // MARK: - Types
 
     #if swift(>=4.2)
@@ -37,5 +39,14 @@ open class TableCellVM: SuperCellVM,
         guard isSelectable == rhs.isSelectable else { return false }
         guard accessoryType == rhs.accessoryType else { return false }
         return true
+    }
+    
+    public static func == (lhs: TableCellVM, rhs: TableCellVM) -> Bool {
+        return lhs.isEqual(rhs)
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(isSelectable)
+        hasher.combine(accessoryType)
     }
 }

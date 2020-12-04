@@ -4,7 +4,7 @@ public typealias TableList = AdapterList<TableSection>
 public typealias CollectionList = AdapterList<CollectionSection>
 
 /// Модель описывающая данные списка для TableViewAdapter и CollectionViewAdapter
-open class AdapterList<SectionType: SectionUniqIdentifier & Equatable & EquatableRows>: Equatable {
+open class AdapterList<SectionType: SectionUniqIdentifier & Equatable & EquatableRows & Hashable>: Equatable {
     // MARK: - Properties
 
     /// Список секций
@@ -27,7 +27,7 @@ open class AdapterList<SectionType: SectionUniqIdentifier & Equatable & Equatabl
     ///
     /// - Parameter id: Идентификатор секции
     public subscript(id: String) -> SectionType {
-        for section in sections where section.id == id {
+        for section in sections where section.identifier == id {
             return section
         }
 

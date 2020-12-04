@@ -11,7 +11,7 @@
 		6562D07C2514A3C700BB4116 /* ShadowableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D01C2514A3C700BB4116 /* ShadowableElement.swift */; };
 		6562D07D2514A3C700BB4116 /* ShadowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D01D2514A3C700BB4116 /* ShadowConfigurator.swift */; };
 		6562D07E2514A3C700BB4116 /* ShadowableElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D01E2514A3C700BB4116 /* ShadowableElementView.swift */; };
-		6562D07F2514A3C700BB4116 /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0222514A3C700BB4116 /* BatchUpdater.swift */; };
+		6562D07F2514A3C700BB4116 /* LegacyBatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0222514A3C700BB4116 /* LegacyBatchUpdater.swift */; };
 		6562D0802514A3C700BB4116 /* SectionsChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0242514A3C700BB4116 /* SectionsChanges.swift */; };
 		6562D0812514A3C700BB4116 /* ChangedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0252514A3C700BB4116 /* ChangedData.swift */; };
 		6562D0822514A3C700BB4116 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0262514A3C700BB4116 /* Box.swift */; };
@@ -73,6 +73,8 @@
 		6562D0BA2514A3C700BB4116 /* NSParagraphStyleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0782514A3C700BB4116 /* NSParagraphStyleExt.swift */; };
 		6562D0BB2514A3C700BB4116 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D0792514A3C700BB4116 /* UIColor+RGBA.swift */; };
 		6562D0BC2514A3C700BB4116 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562D07A2514A3C700BB4116 /* UIImageExt.swift */; };
+		65FFE291257A92A8003BD9E5 /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFE290257A92A8003BD9E5 /* BatchUpdater.swift */; };
+		65FFE295257A9358003BD9E5 /* BatchUpdaterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FFE294257A9358003BD9E5 /* BatchUpdaterImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +83,7 @@
 		6562D01C2514A3C700BB4116 /* ShadowableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowableElement.swift; sourceTree = "<group>"; };
 		6562D01D2514A3C700BB4116 /* ShadowConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowConfigurator.swift; sourceTree = "<group>"; };
 		6562D01E2514A3C700BB4116 /* ShadowableElementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowableElementView.swift; sourceTree = "<group>"; };
-		6562D0222514A3C700BB4116 /* BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
+		6562D0222514A3C700BB4116 /* LegacyBatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyBatchUpdater.swift; sourceTree = "<group>"; };
 		6562D0242514A3C700BB4116 /* SectionsChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsChanges.swift; sourceTree = "<group>"; };
 		6562D0252514A3C700BB4116 /* ChangedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangedData.swift; sourceTree = "<group>"; };
 		6562D0262514A3C700BB4116 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
@@ -144,6 +146,8 @@
 		6562D0782514A3C700BB4116 /* NSParagraphStyleExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParagraphStyleExt.swift; sourceTree = "<group>"; };
 		6562D0792514A3C700BB4116 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
 		6562D07A2514A3C700BB4116 /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
+		65FFE290257A92A8003BD9E5 /* BatchUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
+		65FFE294257A9358003BD9E5 /* BatchUpdaterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchUpdaterImpl.swift; sourceTree = "<group>"; };
 		DD842186BC1234A08C0A5E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD49C1980A42635502C5C084 /* Mirage2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mirage2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,9 +244,11 @@
 		6562D0212514A3C700BB4116 /* BatchUpdater */ = {
 			isa = PBXGroup;
 			children = (
-				6562D0222514A3C700BB4116 /* BatchUpdater.swift */,
+				6562D0222514A3C700BB4116 /* LegacyBatchUpdater.swift */,
 				6562D0232514A3C700BB4116 /* Models */,
 				6562D0282514A3C700BB4116 /* UIExtensions */,
+				65FFE290257A92A8003BD9E5 /* BatchUpdater.swift */,
+				65FFE294257A9358003BD9E5 /* BatchUpdaterImpl.swift */,
 			);
 			path = BatchUpdater;
 			sourceTree = "<group>";
@@ -614,6 +620,7 @@
 				6562D0992514A3C700BB4116 /* CollectionItem.swift in Sources */,
 				6562D0A82514A3C700BB4116 /* TableAdapterCallbacks.swift in Sources */,
 				6562D0882514A3C700BB4116 /* DeepDiff.swift in Sources */,
+				65FFE291257A92A8003BD9E5 /* BatchUpdater.swift in Sources */,
 				6562D0A42514A3C700BB4116 /* RowsEquatable.swift in Sources */,
 				6562D0B22514A3C700BB4116 /* UIViewExt.swift in Sources */,
 				6562D0A72514A3C700BB4116 /* TableViewAdapter.swift in Sources */,
@@ -628,9 +635,10 @@
 				6562D08E2514A3C700BB4116 /* IndexPathConverter.swift in Sources */,
 				6562D0B82514A3C700BB4116 /* NSAttributedStringSugar.swift in Sources */,
 				6562D0B72514A3C700BB4116 /* UIFontExt.swift in Sources */,
-				6562D07F2514A3C700BB4116 /* BatchUpdater.swift in Sources */,
+				6562D07F2514A3C700BB4116 /* LegacyBatchUpdater.swift in Sources */,
 				6562D0B42514A3C700BB4116 /* UITableViewExt.swift in Sources */,
 				6562D0AB2514A3C700BB4116 /* VerticalFlowLayout.swift in Sources */,
+				65FFE295257A9358003BD9E5 /* BatchUpdaterImpl.swift in Sources */,
 				6562D0B32514A3C700BB4116 /* GradientView.swift in Sources */,
 				6562D0BA2514A3C700BB4116 /* NSParagraphStyleExt.swift in Sources */,
 				6562D0A62514A3C700BB4116 /* UITableView.swift in Sources */,

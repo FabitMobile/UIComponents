@@ -1,19 +1,20 @@
 import UIKit
 
-open class AdapterSection<ItemType: DeepHashable & UniqIdentifier & DeepEquatable>:
-    BatchUpdateSection,
+open class AdapterSection<ItemType: DeepHashable & UniqIdentifier & DeepEquatable & Hashable>:
     Hashable,
     SectionUniqIdentifier {
+    
+    typealias RowType = ItemType
     // MARK: - Properties
 
     /// Идентификатор
-    public let id: String
+    public let identifier: String
     public private(set) var rows: [ItemType] = []
 
     // MARK: - Init
 
     public required init(with id: String) {
-        self.id = id
+        self.identifier = id
     }
 
     // MARK: - Count
@@ -89,7 +90,7 @@ open class AdapterSection<ItemType: DeepHashable & UniqIdentifier & DeepEquatabl
     ///
     /// - Parameter id: Идентификатор строки
     public subscript(id: String) -> ItemType? {
-        for row in rows where row.id == id {
+        for row in rows where row.identifier == id {
             return row
         }
 
@@ -99,11 +100,11 @@ open class AdapterSection<ItemType: DeepHashable & UniqIdentifier & DeepEquatabl
     // MARK: - Hashable
 
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
+        hasher.combine(identifier)
     }
 
     public static func == (lhs: AdapterSection, rhs: AdapterSection) -> Bool {
-        guard lhs.id == rhs.id else { return false }
+        guard lhs.identifier == rhs.identifier else { return false }
         guard lhs.equal(object: rhs) else { return false }
         return true
     }

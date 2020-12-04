@@ -18,19 +18,19 @@ open class CollectionItem<CellType: ConfigurableCell>: CollectionItemConfigurabl
     public init(viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        id = "\(Date().timeIntervalSince1970)"
+        identifier = "\(Date().timeIntervalSince1970)"
     }
 
     public init(id: Int, viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        self.id = "\(id)"
+        self.identifier = "\(id)"
     }
 
     public init(id: String, viewModel: CellType.ViewModelType) {
         self.viewModel = viewModel
         super.init()
-        self.id = id
+        self.identifier = id
     }
 
     // MARK: - RowConfigurable
@@ -78,7 +78,7 @@ open class CollectionItem<CellType: ConfigurableCell>: CollectionItemConfigurabl
     override public func equal(object: Any?) -> Bool {
         guard let object = object as? CollectionItem<CellType> else { return false }
 
-        guard id == object.id else { return false }
+        guard identifier == object.identifier else { return false }
         return viewModel == object.viewModel
     }
 }
